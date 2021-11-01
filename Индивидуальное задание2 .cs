@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+namespace Лаба_2
 using System;
 namespace CSharp_Shell
 {
@@ -22,25 +23,3 @@ namespace CSharp_Shell
         }
     }
 }
-
-2 часть;
-
-public static void PrintIfInRange(int x, int n)
-{
-    int y = n - x;
-    if (y >= 0 && y <= 9)
-        Console.Write($" { x * 10 + y } ");
-}
-
-static void Main(string[] args)
-{
-    for (int i = 1; i < 10; i++)
-    {
-        PrintIfInRange(i, 5);
-        PrintIfInRange(i, 10);
-        PrintIfInRange(i, 15);
-    }
-
-    Console.ReadLine();
-};
-
